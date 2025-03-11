@@ -17,10 +17,11 @@ const __dirname = path.dirname(__filename);
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: ["http://localhost:5173", "https://menaichat.netlify.app"],
     credentials: true,
   })
 );
+
 
 app.use(express.json());
 
